@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+int main()
+{
+int income, tax;
+printf("enter income of person:");
+scanf("%d",&income);
+if(income>0)
+{
+if(income<=150000)
+{
+printf("no tax to be collected");
+}
+else if(income>=150001 && income <=300000)
+{
+tax=income/10;
+printf("tax=%d",tax);
+}
+else if(income>=300001 && income<=500000)
+{
+tax=income/20;
+printf("tax=%d",tax);
+}
+else
+{
+tax=income/30;
+printf("tax=%d",tax);
+}
+}
+else
+{
+printf("enter only positive num");
+}
+return 0;
+}
